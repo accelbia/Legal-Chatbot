@@ -1,5 +1,4 @@
-# Legal-Chatbot
-# Legal Chatbot Prototype
+# Legal Chatbot 
 
 ## Overview
 This repository contains the code for a legal chatbot prototype developed using Llama3 and FastAPI. The chatbot aims to assist users with legal queries by refining their questions, classifying them into relevant legal categories, and generating prompts for further processing.
