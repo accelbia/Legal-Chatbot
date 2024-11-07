@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Chat Bot</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="menu">
+                
+                <button id="contract-review" class="button">
+                  <i class="fas fa-file-contract"></i> Contract review</button>
+
+                <button id="compliance-check" class="button">
+                  <i class="fas fa-check-circle"></i> Compliance check</button>
+
+                <button id="risk-management" class="button">
+                  <i class="fas fa-shield-alt"></i>    Risk Management</button>
+
+                <button id="document-generation" class="button">
+                  <i class="fas fa-file-alt"></i>  Document generation</button>
+
+                <button id="saved-documents" class="button">
+                  <i class="fas fa-folder-open"></i>   Saved Documents</button>
+
+                <button id="saved-chats" class="button">
+                  <i class="fa-regular fa-comment-dots"></i> Saved Chats</button>
+                
+            </div>
+            <div class="settings">
+                
+                    <a><i class="fas fa-cog"></i> Settings</a>
+                    <a><i class="fa-regular fa-circle-question"></i> Support</a>
+                    <a><i class="fa-regular fa-message"></i> Feedback</a>
+                
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="header-left">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+                <div class="header-right">
+                    <div class="user-icon">G</div>
+                </div>
+            </div>
+
+            <!-- Chat Box: Initially blank and scrollable when content is added -->
+            <div class="chat-box">
+                <!-- Blank initially -->
+            </div>
+
+            <!-- Input box for user messages -->
+            <div class="input-box">
+                <div class="icon icon-left">
+                    <input type="file" accept=".jpg, .jpeg, .png, .gif, .pdf, .doc, .docx, .ppt, .pptx, .txt" multiple style="display: none;" id="file-upload">
+                    <label for="file-upload" style="cursor: pointer;">
+                        <i class="fa-solid fa-paperclip"></i>
+                    </label>
+                </div>
+                <input type="text" placeholder="Enter your legal mystery, and I’ll be your detective!" aria-label="Search input">
+                <div class="icon">
+                    <i class="fas fa-camera" title="Scan Image"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

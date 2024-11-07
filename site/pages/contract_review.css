@@ -1,0 +1,65 @@
+/* Main content layout */
+.main-content {
+  background-color: #141313;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%; /* Full width */
+}
+
+/* Header adjustments */
+.header {
+  display: flex;
+  justify-content: flex-end; /* Align user icon to the right */
+  padding: 10px 20px;
+  position: sticky;
+  top: 0; /* Stick header to the top */
+  background-color: #141313;
+  z-index: 10;
+}
+
+.user-icon {
+  font-size: 25px;
+  font-weight: 400;
+  border-radius: 100%;
+  color: white;
+  background-color: #00bfa5;
+  padding: 10px 14px;
+}
+
+/* Chatbox adjustments */
+.chat-box {
+  flex-grow: 1;
+  margin-top: 20px;
+  background-color: #141313;
+  overflow-y: auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Input box adjustments */
+.input-box {
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  overflow: hidden;
+  background-color: #2E2D2D;
+  width: calc(100% - 40px); /* Full width with a little padding on sides */
+  margin: 20px; /* Keep consistent margin around input */
+  padding: 10px;
+}
+
+.input-box input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: #2E2D2D;
+  padding: 10px;
+  color: white;
+}
+
+.icon {
+  cursor: pointer;
+  background-color: #2E2D2D;
+  padding: 12px;
+  color: #00bfa5;
+}
